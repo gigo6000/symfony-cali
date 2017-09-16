@@ -163,6 +163,7 @@ header.masthead {
     padding: 150px 15px 100px;
     text-align: center; }
     header.masthead .header-content .header-content-inner h1 {
+      background: rgba(0, 0, 0, 0.2);
       font-size: 30px;
       font-weight: 700;
       margin-top: 0;
