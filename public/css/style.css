@@ -2,3 +2,9 @@
     width: 300px;
 
 }
+.modal-header,.close {
+    background-color:#000000 ;
+    color: #f05f40 !important;
+    text-align: center;
+    font-size: 25px;
+}

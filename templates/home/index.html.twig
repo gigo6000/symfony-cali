@@ -174,12 +174,59 @@
       </div>
     </section>
 
+    <!-- Modal -->
 
+    <div class="modal fade" id="miModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >GET MORE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/images/logo.png"class="img-responsive" alt="Logo" width="150" height="150">
+              </div>
+            <div class="col-md-7">
+            <form role="form">
+              <div class="form-group">
+                <p> Get the very latest Php news in your inbox </p>
+                <p> Don't miss this oportunity!. Leave your e-mail below </p>
+                <input type="text" class="form-control" id="email" placeholder="Enter email">
+              </div>
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign up </button>
+            </form>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
 {% endblock %}
 {% block javascripts %}
-<script>
-//$(document).ready(function(){
 
-//});
+<!-- Evento Scroll -->
+<script type = "text/javascript">
+
+var modal = 0;
+$(document).ready(function(){
+   window.onscroll = function() {scrollFunction()};
+  });
+
+  function scrollFunction() {
+      if (document.body.scrollTop >(window.outerHeight)/2 || document.documentElement.scrollTop > (window.outerHeight)/2 && modal<1) {
+        $("#miModal").modal('show');
+        modal++;
+      }
+
+      }
 </script>
+
+
 {% endblock %}
